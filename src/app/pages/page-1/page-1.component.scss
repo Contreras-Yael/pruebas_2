@@ -1,0 +1,71 @@
+.body_prin{
+  background-color: #646161;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.tite{
+  padding: 40px;
+  justify-content:center;
+  background-color: #ff9797;
+  margin: 10px;
+
+}
+
+
+.boton-menu {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+
+  margin: 10px;
+
+
+  /* Efecto visual cuando el usuario pasa el mouse encima */
+  &:hover {
+    background-color: #333333;
+    color: #ffffff;
+  }
+}
+
+
+/* 🎨 TU NUEVO ELEMENTO LATERAL FLOTANTE */
+.panel-lateral-nuevo {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 300px;
+  height: 100vh;
+
+  background-color: #2c3e50; /* Color azul oscuro independiente */
+  padding: 20px;
+  color: #ffffff;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+/* Estilo simple para el botón dentro de tu nuevo panel */
+.boton-accion {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './page-2.component.scss'
 })
 
+
 export class Page2Component {
 
   public exaccto: string;
