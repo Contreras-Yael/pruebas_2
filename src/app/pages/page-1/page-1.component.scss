@@ -1,21 +1,28 @@
 .body_prin{
-  background-color: #646161;
+  background-color: #558fe6;
   display: flex;
-  justify-content: flex-end;
   margin: 10px;
+  justify-content: center;
+  height: 60px;
+
 }
 
 .tite{
-  padding: 40px;
-  justify-content:center;
-  background-color: #ff9797;
+  justify-content: center;
+  background-color: #b36ee8;
   margin: 10px;
-
+  display: flex;
+  align-items: center;
 }
 
+.prove{
+justify-content: center;
+display: flex;
+align-items: center;
+}
 
 .boton-menu {
-  background-color: #ffffff;
+  background-color: #b693e6;
   color: #333333;
   padding: 8px 16px;
   border-radius: 4px;
@@ -28,9 +35,19 @@
 
   /* Efecto visual cuando el usuario pasa el mouse encima */
   &:hover {
-    background-color: #333333;
+    background-color: #a8e87e;
     color: #ffffff;
   }
 }
 
+.bot_op{
+  justify-content: flex-start;
 
+}
+
+#main {
+  transition: 0.4s ease;
+  &.empujado {
+    margin-left: 250px; /* Se empuja sola cuando la variable es true */
+  }
+}

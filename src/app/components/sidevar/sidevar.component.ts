@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'sidevar',
@@ -6,13 +6,15 @@ import { Component } from '@angular/core';
   templateUrl: './sidevar.component.html',
   styleUrl: './sidevar.component.scss'
 })
+
 export class SidevarComponent {
 
+  @Input() IsOpen= false;
 
-  public sidevar = false;
+  @Output() closeSidebar = new EventEmitter<void>();
 
-  openside(){
-    this.sidevar = !this.sidevar;
+  cerrar() {
+    this.closeSidebar.emit();
   }
 
 }

@@ -11,5 +11,11 @@ import { SidevarComponent } from './components/sidevar/sidevar.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'pruebas';
+
+  public sidevarEstado = false;
+
+  cambiarEstado(nuevoEstado: boolean) {
+    this.sidevarEstado = nuevoEstado;
+  }
+
 }

@@ -1,4 +1,16 @@
+<sidevar
+  [IsOpen]="sidevarEstado"
+  (closeSidebar)="cambiarEstado(false)">
+</sidevar>
 
-<app-page-1></app-page-1>
+
+<div class="bod">
+<app-page-1
+  [empuje]="sidevarEstado"
+  (openSidebar)="cambiarEstado(true)">
+</app-page-1>
+
 <app-page-2></app-page-2>
-<sidevar></sidevar>
+
+</div>
+

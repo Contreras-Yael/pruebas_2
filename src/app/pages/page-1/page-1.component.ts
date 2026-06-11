@@ -1,5 +1,5 @@
 import { NgForOf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-page-1',
@@ -14,6 +14,16 @@ export class Page1Component {
   public extra: string;
 
   public bucle: any[]=["home","home","home","home","home","home","home"];
+
+  @Input() empuje=false;
+
+  @Input() IsOpen= false;
+
+  @Output() apertura= new EventEmitter<void>();
+
+  abrir(){
+    this.apertura.emit();
+  }
 
   constructor(){
 

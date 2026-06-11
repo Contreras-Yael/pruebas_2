@@ -1,18 +1,14 @@
-<div class="panel-lateral-nuevo" [class.active]="sidevar">
-  <a class="cerrbot" href="funciona()" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="panel-lateral-nuevo" [class.active]="IsOpen">
+
+  <a class="cerrbot" (click)="cerrar()">&times;</a>
 
   <div class="cabecera-panel">
     <h4>Elementos</h4>
   </div>
 
-  <div class="cuerpo-panel" [class.active]="sidevar">
+  <div class="cuerpo-panel">
     <p>Lorem ipsun</p>
     <button class="boton-accion">Aplicar</button>
   </div>
-
-<div id="main" [class.empujado]="sidevar">
-  <button (click)="openside()">☰ Open</button>
-</div>
-
 </div>
 

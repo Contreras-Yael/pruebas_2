@@ -1,5 +1,4 @@
 
-/* 🎨 TU NUEVO ELEMENTO LATERAL FLOTANTE */
 .panel-lateral-nuevo {
   width: 0;
   height: 100%;
@@ -16,24 +15,22 @@
   gap: 20px;
   transition: 0.5s;
   overflow-x: hidden;
+
   &.active {
     width: 250px;
   }
 }
 
-#main {
-  transition: 0.4s ease;
-  &.empujado {
-    margin-left: 250px; /* Se empuja sola cuando la variable es true */
-  }
-}
-
 .panel-lateral-nuevo .cerrbot{
  position:absolute;
- top: 0;
+ top: 10px;
  right: 25px;
  font-size: 36px;
  margin-left: 50px;
+
+  &:hover {
+    color: #d695e4;
+  }
 }
 
 /* Estilo simple para el botón dentro de tu nuevo panel */
