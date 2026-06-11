@@ -1,0 +1,50 @@
+
+/* 🎨 TU NUEVO ELEMENTO LATERAL FLOTANTE */
+.panel-lateral-nuevo {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  background-color: #2c3e50; /* Color azul oscuro independiente */
+  padding: 20px;
+  color: #ffffff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.5s;
+  overflow-x: hidden;
+  &.active {
+    width: 250px;
+  }
+}
+
+#main {
+  transition: 0.4s ease;
+  &.empujado {
+    margin-left: 250px; /* Se empuja sola cuando la variable es true */
+  }
+}
+
+.panel-lateral-nuevo .cerrbot{
+ position:absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+/* Estilo simple para el botón dentro de tu nuevo panel */
+.boton-accion {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+

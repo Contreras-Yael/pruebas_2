@@ -24,20 +24,4 @@ export class Page1Component {
 
 }
 
-
-public openNav(){
-
-}
-
-}
-
-
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-
-}
-
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-
 }
