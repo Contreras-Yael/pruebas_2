@@ -3,6 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-page-1',
+  standalone: true,
   templateUrl: './page-1.component.html',
   styleUrl: './page-1.component.scss',
   imports: [NgForOf],

@@ -6,6 +6,7 @@ import { SidevarComponent } from './components/sidevar/sidevar.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, Page1Component, Page2Component, SidevarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

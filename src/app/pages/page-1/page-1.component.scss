@@ -47,7 +47,4 @@ align-items: center;
 
 #main {
   transition: 0.4s ease;
-  &.empujado {
-    margin-left: 250px; /* Se empuja sola cuando la variable es true */
-  }
 }

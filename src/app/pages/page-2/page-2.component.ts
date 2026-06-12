@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { camfech } from '../../shared/pipes/camb_fech';
 
 @Component({
   selector: 'app-page-2',
-  imports: [],
+  imports: [camfech],
   templateUrl: './page-2.component.html',
   styleUrl: './page-2.component.scss'
 })

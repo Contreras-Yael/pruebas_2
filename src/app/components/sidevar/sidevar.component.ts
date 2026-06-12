@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'sidevar',
-  imports: [],
+  standalone: true,
   templateUrl: './sidevar.component.html',
   styleUrl: './sidevar.component.scss'
 })
