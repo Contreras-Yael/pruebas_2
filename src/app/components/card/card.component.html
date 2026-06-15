@@ -1,0 +1,17 @@
+<div class="card">
+@for (character of lista; track character.id) {
+ <div class="card-producto">
+  <img [src]="character.sprites?.front_default" alt="{{ character.name }}">
+
+      <div class="info-heroe">
+        <h3>{{ character.name }}</h3>
+        <p>Bando: {{ character.biography?.alignment}}</p>
+      </div>
+
+      <h3>{{ character.work }}</h3>
+      <p>Precio: ${{ character.biography }}</p>
+      <button class="boton-comprar">Seleccionar</button>
+    </div>
+
+}
+</div>

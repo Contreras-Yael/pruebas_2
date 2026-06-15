@@ -1,0 +1,90 @@
+
+.card {
+ width: 230px;
+ height: 294px;
+ background: #ffffff;
+ margin-left: 2%;
+   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.card-grid{
+margin: auto;
+}
+
+.card-producto{
+
+}
+
+.info-heroe{
+
+}
+
+
+
+
+
+
+
+
+/* 1. EL CONTENEDOR PADRE (El espacio global donde flotan las cartas) */
+.contenedor-grid-kiosko {
+  display: grid; /* 👈 Activa el modo rejilla */
+
+  /* Crea columnas automáticas: cada tarjeta medirá mínimo 180px y máximo 1fr */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+
+  /* 🔥 LA LÍNEA CLAVE: Separa las cartas por 20px de aire a los 4 lados */
+  gap: 20px;
+
+  padding: 20px; /* Margen de seguridad con los bordes de la pantalla */
+  background-color: #121212; /* Fondo oscuro estilo tu diseño de Canva */
+  min-height: 100vh;
+}
+
+/* 2. LA TARJETA INDIVIDUAL (El molde que se repite 70 veces) */
+.card-heroe {
+  /* Al darle un fondo gris claro, notarás de inmediato la separación del 'gap' */
+  background-color: #1e1e1e;
+
+  border-radius: 16px; /* Bordes redondeados premium */
+  padding: 20px;       /* Colchón interno para que los textos no toquen el borde de la carta */
+
+  /* Centramos el contenido de la carta individualmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Un borde sutil para delimitar dónde termina cada carta */
+  border: 1px solid #333333;
+  transition: transform 0.2s ease; /* Efecto visual opcional */
+
+  /* Efecto Pro: La tarjeta se levanta un poquito cuando le pasas el mouse encima */
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #e52030; /* El color rojo Angular de tu paleta */
+  }
+
+  /* Controlamos el tamaño de la foto dentro de la carta */
+  img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para los textos internos */
+  h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  p {
+    color: #a0a0a0;
+    font-size: 0.85rem;
+    margin: 2px 0;
+  }
+}
