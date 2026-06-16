@@ -1,11 +1,11 @@
 import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe({
-  name: "camfech",
+  name: "camf",
   standalone: true
 })
 
-export class camfech implements PipeTransform{
+export class camf2 implements PipeTransform{
 
   transform(value:string | Date): string {
 

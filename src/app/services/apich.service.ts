@@ -7,7 +7,8 @@ import { firstValueFrom } from 'rxjs';
 })
 
 export class characrap {
-  constructor() { }
+  constructor() {
+  }
 
   private http = inject(HttpClient);
 
@@ -18,5 +19,9 @@ export class characrap {
       const data = `${this.urlBase}/${characterId}`;
 
        return firstValueFrom(this.http.get<any>(data))
+  }
+
+  private prueba(){
+    console.log("Entro a la funcion");
   }
 }
