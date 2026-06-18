@@ -1,12 +1,12 @@
 import { NgForOf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-
+import { PruebaComponent } from '../../components/prueba/prueba.component';
 @Component({
   selector: 'app-page-1',
   standalone: true,
   templateUrl: './page-1.component.html',
   styleUrl: './page-1.component.scss',
-  imports: [NgForOf],
+  imports: [NgForOf,PruebaComponent],
 })
 
 export class Page1Component {

@@ -1,17 +1,23 @@
-<div class="card">
+<div class="mosaico">
 @for (character of lista; track character.id) {
- <div class="card-producto">
-  <img [src]="character.sprites?.front_default" alt="{{ character.name }}">
+  <div class="card">
+    <img [src]="character.sprites?.front_default" alt="{{ character.name }}">
 
-      <div class="info-heroe">
-        <h3>{{ character.name }}</h3>
-        <p>Bando: {{ character.biography?.alignment}}</p>
-      </div>
+        <div class="info-heroe">
+          <h3>{{ character.name }}</h3>
 
-      <h3>{{ character.work }}</h3>
-      <p>Precio: ${{ character.biography }}</p>
-      <button class="boton-comprar">Seleccionar</button>
-    </div>
+          <div class="tipo">
+          @for (item of character.types; track item.slot) {
+            <span class="badge-tipo">
+              {{ item.type.name }}
+            </span>
+          }
+        </div>
+          <p>Peso: {{character.weight}}</p>
 
+          <button class="botoncompr" (click)="selecc()">Seleccionar</button>
+        </div>
+
+  </div>
 }
 </div>

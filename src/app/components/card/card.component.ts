@@ -1,5 +1,6 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, Input } from '@angular/core';
 import { characrap } from '../../services/apich.service';
+import { PokesignService } from '../../services/pokesign.service';
 
 @Component({
   selector: 'info-card',
@@ -9,9 +10,13 @@ import { characrap } from '../../services/apich.service';
 })
 export class Infocard implements OnInit{
 
+    public cont = inject(PokesignService);
+
     private marvelApi = inject(characrap);
 
     public lista: any[] = [];
+
+    @Input() list: any[] = [];
 
   ngOnInit(): void {
     this.cargach();
@@ -23,6 +28,10 @@ export class Infocard implements OnInit{
 
       this.lista.push(character);
     }
+  }
+
+  selecc(){
+    this.cont.addpok(this.list);
   }
 
 }
