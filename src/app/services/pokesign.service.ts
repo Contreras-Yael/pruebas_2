@@ -18,5 +18,6 @@ export class PokesignService {
 
   }
 
+
   constructor() { }
 }
