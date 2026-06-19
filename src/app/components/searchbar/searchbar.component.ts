@@ -19,23 +19,13 @@ export class SearchbarComponent implements OnInit {
     this.cargato();
   }
 
-  async cargato(){
+  async cargato() {
+    try {//siempre agregar, no lo ovides de nuevo
+       const data = await this.dat.getCharacter(1);
 
-    const data = await this.dat.getCharacter(1);
+      this.listaseg = Array.isArray(data) ? data : [data];
+      this.listir = [...this.listaseg];
 
-    this.listir =
-
-  }
-
-  // FUNCIÓN 1: Solo se encarga de ir a internet (Ajax) una sola vez
-  async cargarTodosLosPersonajes() {
-    try {
-      // Pedimos los datos al servicio (Cambié el ID por una función ideal que traiga la lista)
-      const data = await this.dat.getCharacter(1);
-
-      // Si la API te devuelve una lista, la guardamos en ambas variables
-      this.listaOriginal = Array.isArray(data) ? data : [data];
-      this.listir = [...this.listaOriginal];
     } catch (error) {
       console.error('Error de red al descargar personajes:', error);
     }
