@@ -1,6 +1,6 @@
 import { NgForOf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { PruebaComponent } from '../../components/prueba/prueba.component';
+import { PruebaComponent } from '../prueba/prueba.component';
 @Component({
   selector: 'app-page-1',
   standalone: true,

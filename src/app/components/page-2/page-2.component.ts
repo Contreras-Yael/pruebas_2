@@ -19,6 +19,13 @@ export class Page2Component implements OnInit {
 
   @Input() extra: any;
 
+  public estado : boolean = false;
+
+
+  cambioestado(): void{
+    this.estado = !this.estado;
+  }
+
   constructor(public test:characrap){
     this.exaccto = "Inexacto";
   }

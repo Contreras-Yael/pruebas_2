@@ -1,10 +1,12 @@
 import { Component, OnInit, inject, Input } from '@angular/core';
 import { characrap } from '../../services/apich.service';
 import { PokesignService } from '../../services/pokesign.service';
+import { Page1Component } from '../page-1/page-1.component';
+import { Page2Component } from '../page-2/page-2.component';
 
 @Component({
   selector: 'info-card',
-  imports: [],
+  imports: [Page1Component,Page2Component],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })

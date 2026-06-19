@@ -1,39 +1,3 @@
-
-.panel-lateral-nuevo {
-  width: 0;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 60px;
-  background-color: #2c3e50; /* Color azul oscuro independiente */
-  padding: 20px;
-  color: #ffffff;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  transition: 0.5s;
-  overflow-x: hidden;
-
-  &.active {
-    width: 250px;
-  }
-}
-
-.panel-lateral-nuevo .cerrbot{
- position:absolute;
- top: 10px;
- right: 25px;
- font-size: 36px;
- margin-left: 50px;
-
-  &:hover {
-    color: #d695e4;
-  }
-}
-
-/* Estilo simple para el botón dentro de tu nuevo panel */
 .boton-accion {
   background-color: #2ecc71;
   color: white;
@@ -44,4 +8,40 @@
   font-weight: bold;
 }
 
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  transition: left 0.3s ease;
+}
+
+.sidebar-wrapper.abierta {
+  left: 0;
+}
+
+.menu-lateral {
+  width: 100%;
+  height: 100%;
+  background-color: #3879ebca;
+  border-right: 1px solid #333;
+  padding: 20px;
+}
+
+
+.btn-flotante {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+
+  width: 45px;
+  height: 45px;
+  background-color: #e52030;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  box-shadow: 4px 0 8px rgba(0,0,0,0.3);
+}
 

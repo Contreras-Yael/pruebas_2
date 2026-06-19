@@ -1,13 +1,18 @@
-<div class="panel-lateral-nuevo" [class.active]="IsOpen">
+<div class="sidebar-wrapper" [class.abierta]="estado">
 
-  <a class="cerrbot" (click)="cerrar()">&times;</a>
+  <aside class="menu-lateral">
+    <div class="cabecera-panel">
+      <h4>Elementos</h4>
+      <hr>
+      <a routerLink="/Inicio"> Landing</a> &nbsp;
+      <a routerLink="/Formulario"> Formulario</a> &nbsp;
+      <a routerLink="/Imagen"> Imagen</a> &nbsp;
+      <a routerLink="/Equipo"> Mi equipo</a> &nbsp;
+      <hr>
+    </div>
+  <button class="btn-flotante" (click)="alternarSidebar()">
+    {{ estado ? '✖️' : '🟰' }}
+  </button>
+  </aside>
 
-  <div class="cabecera-panel">
-    <h4>Elementos</h4>
-  </div>
-
-  <div class="cuerpo-panel">
-    <p>Lorem ipsun</p>
-    <button class="boton-accion">Aplicar</button>
-  </div>
 </div>

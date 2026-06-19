@@ -1,16 +1,16 @@
-<sidevar
-  [IsOpen]="sidevarEstado"
-  (closeSidebar)="cambiarEstado(false)">
-</sidevar>
+<sidevar></sidevar>
 
-<app-page-1
-  [empuje]="sidevarEstado"
-  (apertura)="cambiarEstado(true)">
-</app-page-1>
-
+<router-outlet>
+<app-page-1></app-page-1>
 
 <app-page-2></app-page-2>
-<info-card></info-card>
+
+</router-outlet>
+
+
+
+
+
 
 
 

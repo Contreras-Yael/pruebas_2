@@ -1,0 +1,22 @@
+<h2> Formulario simple</h2>
+
+<form (ngSubmit)="Subir()">
+
+  <p>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" required />
+
+      @if(nombre){
+
+      }
+
+  </p>
+  <p>
+    <label for="email">Email</label>
+    <input type="email" id="Email" name="email" [(ngModel)]="email" required />
+  </p>
+  <p>
+    <label for="edad">Edad</label>
+    <input type="number" id="Edad" name="edad" [(ngModel)]="edad" required />
+  </p>
+</form>
